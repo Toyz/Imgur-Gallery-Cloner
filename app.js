@@ -100,7 +100,7 @@ if(cluster.isMaster){
         if(fs.existsSync(f)){
             fs.createReadStream(f).pipe(res);
         }else{
-            res.send("Nigga this is no image!");
+            res.send("This is not a image!");
         }
     })
 
@@ -120,6 +120,8 @@ if(cluster.isMaster){
         res.send("Safe to restart now 'forever start app.js'!");
 
     })
+    require("fs").mkdirSync("./Images");
+    require("fs").mkdirSync("./Files");
 
     http.createServer(app).listen(3000);
     var dara = require("fs").readFileSync("config.json", "utf8");
