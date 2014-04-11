@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Random Images :: Toyz.io</title>
+
+    <!-- Core CSS - Include with every page -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Page-Level Plugin CSS - Blank -->
+
+    <!-- SB Admin CSS - Include with every page -->
+    <link href="/css/sb-admin.css" rel="stylesheet">
+
+    <script src="http://code.jquery.com/jquery-2.0.3.min.js" type="application/javascript"></script>
+
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+
+    <!-- Page-Level Plugin Scripts - Blank -->
+
+    <!-- SB Admin Scripts - Include with every page -->
+    <script src="http://static.badgedirectory.com/js/bootbox.min.js"></script>
+    <script src="/js/sb-admin.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("a#gift").on("click", function(e){
+                e.preventDefault();
+                var loadporn = function(){
+                   var f = bootbox.dialog({
+                        message: '<p align="center"><object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=7,0,19,0" width="650" height="616"><param name="movie" value="http://meatspin.com/mspin_counter.swf"><param name="quality" value="high"><embed src="http://meatspin.com/mspin_counter.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="650" height="616"></embed> </object></p>',
+                        title: "#Winning",
+                        buttons: {
+                        }
+                    }).find(".modal-header").empty();
+                }
+                loadporn();
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+<div id="wrapper">
+
+<nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+<div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".sidebar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="/">Random Images :: Toyz.io</a>
+</div>
+</nav>
+<!-- /.navbar-static-top -->
+
+<nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse">
+        <ul class="nav" id="side-menu">
+            <li class="sidebar-search">
+                <select class='form-control' id="galslist">
+                    <option value='-1'>Select a Item</option>
+                </select>
+            </li>
+            <li>
+                <li><a href="#" id="gift" style="display: none">For Eric</a></li>
+            </li>
+            <li>
+                <a href="#"><i class="fa fa-gear fa-fw"></i> Site Stats<span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level">
+                    <li id="total">
+
+                    </li>
+                    <li id="gtotal">
+
+                    </li>
+                </ul>
+                <!-- /.nav-second-level -->
+            </li>
+            <li class="active">
+                <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Picture Galleries<span class="fa arrow"></span></a>
+                <ul class="nav nav-second-level" id="gals">
+                </ul>
+                <!-- /.nav-second-level -->
+            </li>
+        </ul>
+        <!-- /#side-menu -->
+    </div>
+    <!-- /.sidebar-collapse -->
+</nav>
+<!-- /.navbar-static-side -->
+
+<div id="page-wrapper">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header" id="gname"></h1>
+        </div>
+
+        <div class="row" id="images" data-page="1">
+
+        </div>
+        <!-- /.col-lg-12 -->
+    </div>
+    <!-- /.row -->
+</div>
+<!-- /#page-wrapper -->
+
+</div>
+</body>
+
+</html>
