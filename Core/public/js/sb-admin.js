@@ -15,6 +15,8 @@ $(function() {
             $('div.sidebar-collapse').removeClass('collapse')
         }
     })
+
+    $.get()
 })
 
 var image = $("<img class='img-responsive thumbnail' />");

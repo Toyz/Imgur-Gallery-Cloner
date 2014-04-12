@@ -218,3 +218,6 @@ node_modules/**/*
 .idea
 *.log
 *.iml
+/Files/*.txt
+Images/**/*
+!Images/DO NO DELETE

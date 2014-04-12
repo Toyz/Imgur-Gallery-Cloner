@@ -9,7 +9,7 @@ var async = require("async");
 var http = require('http');
 var logger = require('../Core/Logger');
 
-exports.GetPage = function(page, name){
+exports.GetPage = function(page, name, s){
     page = page;
     var fff = this;
     var f = path.join("./Images", name);
